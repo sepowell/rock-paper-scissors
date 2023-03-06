@@ -12,13 +12,16 @@ let computerChoice = "";
 
 function getComputerChoice() {
   let choiceNum = Math.floor(Math.random() * 3);
-  
-  if (choiceNum == 0) {
-    computerChoice = "Rock";
-  } else if (choiceNum == 1) {
-    computerChoice = "Paper";
-  } else {
-    computerChoice = "Scissors";
+
+  switch (choiceNum) {
+    case 0:
+      computerChoice = "Rock";
+      break;
+    case 1:
+      computerChoice = "Paper";
+      break;
+    case 2:
+      computerChoice = "Scissors";
   }
   
 }
