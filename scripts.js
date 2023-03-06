@@ -1,10 +1,7 @@
 
-let computerChoice = "";
-
 /**
  * Function getComputerChoice randomly generates 
- * a number between 0 and 2. Then assigns as follows
- * to global scope variable computerChoice:
+ * a number between 0 and 2. Then returns as follows
  * 0 = Rock
  * 1 = Paper
  * 2 = Scissors
@@ -15,17 +12,13 @@ function getComputerChoice() {
 
   switch (choiceNum) {
     case 0:
-      computerChoice = "Rock";
+      return "Rock";
       break;
     case 1:
-      computerChoice = "Paper";
+      return "Paper";
       break;
     case 2:
-      computerChoice = "Scissors";
+      return "Scissors";
   }
   
 }
-
-getComputerChoice()
-
-console.log (computerChoice);
