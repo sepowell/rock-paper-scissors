@@ -13,12 +13,13 @@ function getComputerChoice() {
   switch (choiceNum) {
     case 0:
       return "Rock";
-      break;
+    
     case 1:
       return "Paper";
-      break;
+      
     case 2:
       return "Scissors";
+    
   }
 }
 
@@ -35,7 +36,7 @@ let computerChoice = getComputerChoice();
  * and returns the result of the round. 
  */
 
-function playRound (playerChoice, computerChoice) {
+function playRound(playerChoice, computerChoice) {
   if (playerChoice == "Rock") {
     if (computerChoice == "Rock") {
       return "Tie!";
@@ -65,4 +66,12 @@ function playRound (playerChoice, computerChoice) {
   }
 }   
 
-console.log(playRound(playerChoice, computerChoice));
+function game() {
+
+  for (let i = 0; i < 5; i++) {
+   playRound(playerChoice, computerChoice);
+   console.log(i)
+  }
+}
+
+game()
