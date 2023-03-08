@@ -1,6 +1,6 @@
 
 let playerChoice = "";
-let computerChoice = getComputerChoice(); 
+let computerChoice = ""; 
 
 let playerScore = document.getElementById("playerScore");
 let computerScore = document.getElementById("computerScore");
@@ -13,7 +13,8 @@ let gameScore = document.getElementById("gameScore");
 
 /**
  * Function getPlayerChoice recieves input from user 
- * then triggers the game function.
+ * then triggers the getComputerChoice and game
+ * functions.
  */
 
 function getPlayerChoice(choice) {
@@ -31,7 +32,7 @@ function getPlayerChoice(choice) {
       break;
 
   }
-
+  getComputerChoice();
   game();
 
 }
@@ -49,26 +50,22 @@ function getComputerChoice() {
 
   switch (choiceNum) {
     case 0:
-      return "Rock";
-    
+      computerChoice = "Rock";
+      break;
     
     case 1:
-      return "Paper";
-      
+      computerChoice = "Paper";
+      break;
       
     case 2:
-      return "Scissors";
-    
+      computerChoice = "Scissors";
+      break;
   }
 }
 
 /**
- * playRound function takes input from the computerChoice 
- * variable. computerChoice variable is assigned to 
- * getComputerChoice function, and then compares to
- * players choice.
- * 
- * only initalizes when the player makes their choice.
+ * playRound only initalizes when the player makes their 
+ * choice.
  * 
  * runs the inputs through a nested if else statement
  * hooking from the playersChoice first to find the 
@@ -76,7 +73,7 @@ function getComputerChoice() {
  * plays counter.
  */
 
-function playRound(computerChoice) {
+function playRound() {
   if (playerChoice == "Rock") {
     if (computerChoice == "Rock") {
       roundResult.innerText = "Tie!";
@@ -120,7 +117,7 @@ function playRound(computerChoice) {
  */
 
 function game() {
-  playRound(computerChoice);
+  playRound();
   playerScore.innerText = playerWins;
   computerScore.innerText = computerWins;
 
