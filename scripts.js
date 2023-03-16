@@ -123,9 +123,17 @@ function game() {
 
   if (playerWins == 5 && computerWins < 5) {
     gameResult.innerText = "You Win!";
+    disableGame();
   } else if (playerWins < 5 && computerWins == 5) {
     gameResult.innerText = "You Lose... :-("
+    disableGame();
   } else {
     gameResult.innerText = "You got this!"
   }
+}
+
+function disableGame() {
+  document.getElementById("rock").disabled = true;
+  document.getElementById("paper").disabled = true;
+  document.getElementById("scissors").disabled = true;
 }
