@@ -11,6 +11,8 @@ let gameResult = document.getElementById("gameResult");
 let roundResult = document.getElementById("roundResult");
 let gameScore = document.getElementById("gameScore");
 
+const container = document.querySelector('.container');
+
 /**
  * Function getPlayerChoice recieves input from user 
  * then triggers the getComputerChoice and game
@@ -136,4 +138,22 @@ function disableGame() {
   document.getElementById("rock").disabled = true;
   document.getElementById("paper").disabled = true;
   document.getElementById("scissors").disabled = true;
+
+  addNewGameBtn();
+}
+
+const newGameBtn = document.createElement('button');
+newGameBtn.classList.add('newgamebtn');
+newGameBtn.textContent = "New Game?";
+
+newGameBtn.addEventListener("click", () => {
+  newGame();
+});
+
+function addNewGameBtn() {
+  container.appendChild(newGameBtn);
+}
+
+function newGame() {
+  console.log("pls work");
 }
