@@ -134,4 +134,6 @@ function newGame() {
   document.getElementById("rock").disabled = false;
   document.getElementById("paper").disabled = false;
   document.getElementById("scissors").disabled = false;
+
+  newGameBtn.remove();
 }
