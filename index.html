@@ -16,21 +16,29 @@
   <h1 class="title"> Rock Paper Scissors!</h1>
 
   <div class="container">
-    <div>
+
+    <div class="btns-container">
       <button id ="rock" onclick="getPlayerChoice('Rock')">
-        Rock</button>
+        <img class="button-image" src="images/rock.png">
+        </button>
       <button id ="paper" onclick="getPlayerChoice('Paper')">
-        Paper</button>
+        <img class="button-image" src="images/paper.png">
+        </button>
       <button id ="scissors" onclick="getPlayerChoice('Scissors')">
-        Scissors</button>
+        <img class="button-image" src="images/scissors.png">
+        </button>
     </div>
+
     <p id="roundResult">Ready to play!</p>
     <p id="gameScore">SCORE</p>
+
     <div class="scorebox">
       <p id ="playerScore">0</p>
       <p id ="computerScore">0</p>
     </div>
+
     <p id="gameResult"></p>
+    
   </div>
 
 </body>

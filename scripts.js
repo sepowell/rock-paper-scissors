@@ -110,6 +110,7 @@ function disableGame() {
   addNewGameBtn();
 }
 
+// New Game Button
 const newGameBtn = document.createElement('button');
 newGameBtn.classList.add('newgamebtn');
 newGameBtn.textContent = "New Game?";

@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 .title {
   text-align: center;
   text-decoration: underline;
@@ -7,9 +12,34 @@
   text-align: center;
 }
 
+.btns-container {
+  
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  appearance: none;
+  background-color: inherit;
+  margin-left: 60px;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+.button-image {
+  height: 115px;
+  width: auto;
+}
+
+
 .scorebox {
   display: flex;
   justify-content: center;
-  gap: 50px;
-  
+  gap: 50px; 
+}
+
+.newgamebtn {
+  margin-left: 0px;
 }
