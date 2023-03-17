@@ -1,11 +1,24 @@
+@font-face {
+  font-family: handwritting;
+  src: url(ReenieBeanie.ttf);
+}
+
 * {
   margin: 0;
   padding: 0;
+  font-family: handwritting;
+}
+
+body {
+  background-image: url("images/crumpledpaper.jpeg");
+  background-size: cover;
 }
 
 .title {
   text-align: center;
   text-decoration: underline;
+  margin-top: 40px;
+  font-size: 60px;
 }
 
 .container {
@@ -13,7 +26,8 @@
 }
 
 .btns-container {
-  
+  margin-top: 60px;
+  margin-left: -10px;
 }
 
 button {
@@ -28,18 +42,62 @@ button:hover {
   transform: scale(1.1);
 }
 
-.button-image {
+.button-image-paper {
   height: 115px;
   width: auto;
 }
+.button-image-rock {
+  height: 90px;
+  width: auto;
+  margin-bottom: 10px
 
+}
+
+.button-image-scissors {
+  height: auto;
+  width: 200px;
+  margin-bottom: 15px;
+  margin-left: -20px;
+}
+
+.round-result {
+  margin-top: 30px;
+  font-size: 40px;
+}
+
+.score-title {
+  margin-top: 30px;
+  font-size: 40px;
+  text-decoration: underline;
+}
 
 .scorebox {
   display: flex;
   justify-content: center;
   gap: 50px; 
+  margin-top: 10px;
+  font-size: 70px;
+}
+
+#playerScore {
+  color: green;
+}
+
+#computerScore {
+  color: red;
+}
+
+.game-result {
+  margin-top: 30px;
+  font-size: 40px;
 }
 
 .newgamebtn {
   margin-left: 0px;
+  margin-top: 30px;
+}
+
+.newgameimage {
+  height: 40px;
+  width: auto;
 }
