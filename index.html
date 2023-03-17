@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rock Paper Scissors!</title>
   <link rel="stylesheet" href="styles.css">
-
+  <script src="scripts.js" defer></script>
 </head>
 
 <body>
@@ -16,24 +16,33 @@
   <h1 class="title"> Rock Paper Scissors!</h1>
 
   <div class="container">
-    <div>
-      <button onclick="getPlayerChoice('Rock')">
-        Rock</button>
-      <button onclick="getPlayerChoice('Paper')">
-        Paper</button>
-      <button onclick="getPlayerChoice('Scissors')">
-        Scissors</button>
+
+    <p id="roundResult" class="round-result">Ready to play! <br> Pick your hand and the computer will fight you! <br> Best to 5 wins!</p>
+
+
+    <div class="btns-container">
+      <button id ="rock" onclick="getPlayerChoice('Rock')">
+        <img class="button-image-rock" src="images/rock.png">
+        </button>
+      <button id ="paper" onclick="getPlayerChoice('Paper')">
+        <img class="button-image-paper" src="images/paper.png">
+        </button>
+      <button id ="scissors" onclick="getPlayerChoice('Scissors')">
+        <img class="button-image-scissors" src="images/scissors.png">
+        </button>
     </div>
-    <p id="roundResult">Ready to play!</p>
-    <p id="gameScore">SCORE</p>
+
+    <p id="gameScore" class="score-title">SCORE</p>
+
     <div class="scorebox">
       <p id ="playerScore">0</p>
       <p id ="computerScore">0</p>
     </div>
-    <p id="gameResult"></p>
+
+    <p id="gameResult" class="game-result"></p>
+
   </div>
 
-  <script src="scripts.js"></script>
 </body>
 
 </html>
