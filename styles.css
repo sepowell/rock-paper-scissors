@@ -101,3 +101,28 @@ button:hover {
   height: 40px;
   width: auto;
 }
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+  height: 4rem;
+  text-align: center;
+}
+
+footer > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer >div > p {
+  font-size: 30px;
+}
+
+footer > div > p > a {
+  color: rgb(91, 91, 235);
+}
+
+footer > div > p > a:hover {
+  color:darkorange;
+}
